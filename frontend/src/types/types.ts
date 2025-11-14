@@ -53,6 +53,8 @@ export interface IFacultyAdvisor {
     email: string;
     department: string;
     program: string;
+    address: string;
+    phoneNumber: string;
     passwordHash: string;
     otp?: string;
     otpExpires?: Date;

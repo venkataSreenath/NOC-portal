@@ -4,14 +4,15 @@ import app from './app';
 import config from './config/config';
 import { connectDB } from "./db";
 import { seedDatabase } from './seed';
+import { seedDepartmentRepresentatives, seedFacultyAdvisors, seedStudents } from './tests/authTest';
 
 
 const startServer = async () => {
   try {
     await connectDB();
-    // await seedStudents();
-    // await seedFacultyAdvisors();
-    // await seedDepartmentRepresentatives();
+    await seedStudents();
+    await seedFacultyAdvisors();
+    await seedDepartmentRepresentatives();
     // await seedAdmin();
     seedDatabase();
 

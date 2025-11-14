@@ -121,6 +121,8 @@ const facultyAdvisorData = [
     email: "meera.nair@university.edu",
     department: "CSE",
     program: AcademicDeptPrograms.CSE?.[0] ?? "", // B.Tech in CSE
+    address: "123 Tech Park Avenue, Block A, Apartment 4B, Bangalore - 560001",
+    phoneNumber: "+91-9876543210",
     password: "meeraCSE@123",
   },
   {
@@ -128,6 +130,8 @@ const facultyAdvisorData = [
     email: "r.krishnan@university.edu",
     department: "EEE",
     program: AcademicDeptPrograms.EEE?.[0] ?? "",
+    address: "456 Electronics Street, Green Valley Apartments, Chennai - 600042",
+    phoneNumber: "+91-9876543211",
     password: "krishnanEEE@123",
   },
   {
@@ -135,6 +139,8 @@ const facultyAdvisorData = [
     email: "s.iyer@university.edu",
     department: "ME",
     program: AcademicDeptPrograms.ME?.[0] ?? "",
+    address: "789 Mechanical Road, Sunrise Residency, Pune - 411015",
+    phoneNumber: "+91-9876543212",
     password: "iyerME@123",
   },
   {
@@ -142,6 +148,8 @@ const facultyAdvisorData = [
     email: "anil.deshpande@university.edu",
     department: "ECE",
     program: AcademicDeptPrograms.ECE?.[0] ?? "",
+    address: "321 Communication Lane, Tech Towers, Hyderabad - 500032",
+    phoneNumber: "+91-9876543213",
     password: "deshpandeECE@123",
   },
   {
@@ -149,6 +157,8 @@ const facultyAdvisorData = [
     email: "r.balasubramanian@university.edu",
     department: "CE",
     program: AcademicDeptPrograms.CE?.[0] ?? "",
+    address: "654 Civil Engineering Colony, Metro Heights, Delhi - 110092",
+    phoneNumber: "+91-9876543214",
     password: "balaCE@123",
   },
   {
@@ -156,6 +166,8 @@ const facultyAdvisorData = [
     email: "kavita.joshi@university.edu",
     department: "EEE",
     program: AcademicDeptPrograms.EEE?.[1] ?? "", // M.Tech in Power Systems
+    address: "987 Power Grid Avenue, Energy Park, Mumbai - 400076",
+    phoneNumber: "+91-9876543215",
     password: "joshiEEE@456",
   },
   {
@@ -163,6 +175,8 @@ const facultyAdvisorData = [
     email: "n.suresh@university.edu",
     department: "ECE",
     program: AcademicDeptPrograms.ECE?.[1] ?? "", // M.Tech in VLSI Design
+    address: "147 VLSI Circuit Road, Silicon Valley Apartments, Bangalore - 560100",
+    phoneNumber: "+91-9876543216",
     password: "sureshECE@789",
   },
   {
@@ -170,6 +184,8 @@ const facultyAdvisorData = [
     email: "alok.mishra@university.edu",
     department: "CE",
     program: AcademicDeptPrograms.CE?.[1] ?? "", // M.Tech in Structural Engg
+    address: "258 Structural Design Boulevard, Builders Enclave, Kolkata - 700091",
+    phoneNumber: "+91-9876543217",
     password: "alokCE@321",
   },
 ];

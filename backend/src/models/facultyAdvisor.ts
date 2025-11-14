@@ -6,6 +6,8 @@ export interface IFacultyAdvisor extends mongoose.Document {
     email: string;
     department: string;
     program: string;
+    address: string;
+    phoneNumber: string;
     passwordHash: string;
     otp?: string;
     otpExpires?: Date;
@@ -16,6 +18,17 @@ const facultyAdvisorSchema = new mongoose.Schema<IFacultyAdvisor>({
         type: String,
         required: true,
         maxLength: 100,
+    },
+    address: {
+        type: String,
+        required: true,
+        maxLength: 200,
+    },
+    phoneNumber: {
+        type: String,
+        required: true,
+        maxLength: 15,
+        match: [/^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/, 'Please enter a valid phone number'],
     },
     email: {
         type: String,

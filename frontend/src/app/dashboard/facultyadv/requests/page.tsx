@@ -1,6 +1,7 @@
 "use client";
 import { RequestsView } from "../components/requests-view";
 import { RequestDialogs } from "../components/request-dialogs";
+import { ProfileCard } from "../components/profile-card";
 import { useFacultyRequests } from "../hooks/useFacultyRequests";
 import { useState } from "react";
 import { getSession } from "@/lib/auth";
@@ -78,12 +79,14 @@ export default function FacultyRequestsPage() {
 
   return (
     <div className="p-8 space-y-6">
-      <div>
-        <h2 className="text-3xl font-bold text-foreground">Pending Requests</h2>
-        <p className="text-foreground-muted mt-1">
-          Requests awaiting your action
-        </p>
-      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 space-y-6">
+          <div>
+            <h2 className="text-3xl font-bold text-foreground">Pending Requests</h2>
+            <p className="text-foreground-muted mt-1">
+              Requests awaiting your action
+            </p>
+          </div>
 
       <RequestsView
         requests={pending}
@@ -120,6 +123,12 @@ export default function FacultyRequestsPage() {
         onRejectDialogChange={setShowRejectDialog}
         onRejectionReasonChange={setRejectionReason}
       />
+        </div>
+        
+        <div className="lg:col-span-1">
+          <ProfileCard />
+        </div>
+      </div>
     </div>
   );
 }
